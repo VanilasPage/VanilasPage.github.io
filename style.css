@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: url("https://i.pinimg.com/736x/89/38/cb/8938cb8a9b67d871af843a10c79c4c8b.jpg");
+    background-size: cover;
+    
+    overflow-x:hidden;
+}
+button{
+    border: none;
+    font-family: "Inter", sans-serif;
+    background-color: white;
+    transition: background-color .5s;
+}
+header{
+    width: 100vw;
+    height: 10vh;
+    border-bottom: rgb(214, 214, 214) solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+#logo, #logodown{
+    width: 6vh;
+    height: 6vh;
+    background: url(./files/logo2.png);
+    background-size: cover;
+    border-radius: 1vh;
+    transition: transform .5s;
+    transform-origin: center;
+    justify-self: start;
+}
+#headerMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.5vh;
+    border-radius: 7vh;
+    border: rgb(214, 214, 214) solid 1px;
+    padding: 0 .5vh;
+    gap: 1vh;
+    
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    border-radius: 2vh;
+    padding: 0 1vh;
+    font-size: 14px;
+    transition: background-color .5s;
+    font-weight: 400;
+    color: black;
+    
+}
+li > span{
+    margin-left: 1vh;
+}
+#theme{
+    width: 6vh;
+    height: 6vh;
+    background: none;
+    border: none;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+main{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main > h1{
+    margin: 3vh 0;
+}
+.infoboard{
+    background-color: rgb(50, 105, 50);
+    border-radius: 5vh;
+    animation: appearance 2s ease-out;
+    
+}
+.main{
+    width: 96vw;
+    height: 50vh;
+    padding: 5vh;
+    background: url("https://i.ytimg.com/vi/x4qdXdXQvSY/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main > h1{
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+.main > div > p{
+    font-size: 2vh;
+    margin-bottom: 2vh;
+}
+.main > #description{
+    width: 50%;
+    height: 25%;
+    display: flex;
+}
+.main > div{
+    width: 30%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#copyIp{
+    width: 10vw;
+    height: 40%;
+    border-radius: 500px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.newsboard{
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+}
+.news{
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1vh;
+}
+.laster{
+    background-image: url("https://i.ytimg.com/vi/6Vq_SCBRbZo/maxresdefault.jpg");
+    background-size: cover;
+}
+.last{
+    background-color: black;
+}
+.previous{
+    background-color: black;
+}
+.infobox{
+    width: 100%;
+    height: 50%;
+    color: white;
+    backdrop-filter: blur(20px);
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.infobox > h1{
+    margin-bottom: 2vh;
+    font-size: 2rem;
+}
+.infobox > p{
+    font-size: 1rem;
+}
+#newsboardbutton{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5vh;
+    
+}
+#othernews{
+    background-color: white;
+    width: 10%;
+    height: 50%;
+    border-radius: 500px;
+    font-size: 1rem;
+}
+footer{
+    margin-top: 5vh;
+    height: 30vh;
+    border-top: rgb(214, 214, 214) solid 1px;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+footer > div{
+    width: 51%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer > div > span{
+    color: gray;
+}
+#footer{
+    width: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li:hover,#theme:hover,#othernews:hover,#copyIp:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+#logo:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+@keyframes appearance{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
