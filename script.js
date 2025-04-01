@@ -4,15 +4,13 @@ const logoBtn = document.querySelector(`#logo`)
 const copyIpBtn = document.querySelector(`#copyIp`)
 const themeBtn = document.querySelector(`#theme`)
 const themeIcon = document.querySelector(`#theme > svg`)
-const othernewsBtn = document.querySelector(`#othernews`)
+// const othernewsBtn = document.querySelector(`#othernews`)
 const hMainBtn = document.querySelector(`#hMain`)
 const hPeculiaritiesBtn = document.querySelector(`#hPeculiarities`)
 const hRulesBtn = document.querySelectorAll(`#hRules`)
 const hDonateBtn = document.querySelector(`#hDonate`)
 const hTgBtn = document.querySelector(`#hTg`)
 const hDiscordBtn = document.querySelector(`#hDiscord`)
-
-console.dir(themeIcon)
 
 if (localStorage.getItem(`theme`)==undefined) {
     localStorage.setItem(`theme`,`light`)
@@ -65,9 +63,9 @@ themeBtn.addEventListener(`click`,(event)=>{
     }
 })
 
-othernewsBtn.addEventListener(`click`,(event)=>{
-    alertBtn(event)
-})
+// othernewsBtn.addEventListener(`click`,(event)=>{
+//     alertBtn(event)
+// })
 hMainBtn.addEventListener(`click`,(event)=>{
     alertBtn(event)
 })

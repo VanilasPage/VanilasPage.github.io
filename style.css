@@ -79,8 +79,6 @@ li > span{
     align-items: center;
     
 }
-
-
 main{
     padding-top: 10vh;
     display: flex;
@@ -137,61 +135,40 @@ main > h1{
     font-weight: 600;
     font-size: 1rem;
 }
-.newsboard{
+.socioboard{
     width: 96vw;
     display: flex;
     justify-content: space-between;
 }
-.news{
-    height: 50vh;
+.socio{
+    height: 20vh;
     width: 30vw;
     display: flex;
     justify-content: center;
-    align-items: end;
-    padding: 1vh;
-}
-.laster{
-    background-image: url("https://i.ytimg.com/vi/6Vq_SCBRbZo/maxresdefault.jpg");
-    background-size: cover;
-}
-.last{
-    background-color: black;
-}
-.previous{
-    background-color: black;
-}
-.infobox{
-    width: 100%;
-    height: 50%;
-    color: white;
-    backdrop-filter: blur(20px);
-    border-radius: 5vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 1vh;
+    color: white;
+    position: relative;
+    top: 0;
+    transition: all .25s;
+}
+.socio > h1{
+    margin-left: 1vh;
+}
+.discord{
+    background-color: #5865f2;
+}
+.telegram{
+    background-color: #26a5e4;
+}
+.youtube{
+    background-color: #ff0000;
 }
 .infobox > h1{
     margin-bottom: 2vh;
     font-size: 2rem;
 }
 .infobox > p{
-    font-size: 1rem;
-}
-#newsboardbutton{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 5vh;
-    
-}
-#othernews{
-    background-color: white;
-    width: 10%;
-    height: 50%;
-    border-radius: 500px;
     font-size: 1rem;
 }
 footer{
@@ -224,6 +201,19 @@ footer > div > span{
     justify-content: space-around;
 }
 
+.socio:hover{
+    top: -10px;
+}
+.discord:hover{
+    box-shadow: 0px 0px 50px #5865f2;
+}
+.telegram:hover{
+    box-shadow: 0px 0px 50px #26a5e4;
+}
+.youtube:hover{
+    box-shadow: 0px 0px 50px #ff0000;
+}
+
 li:hover,#theme:hover,#othernews:hover,#copyIp:hover{
     background-color: rgb(226, 226, 226);
     cursor: pointer;
@@ -251,9 +241,6 @@ li:hover,#theme:hover,#othernews:hover,#copyIp:hover{
     }
     header > #headerMenu{
         display: none;
-    }
-    main{
-
     }
     main > .main{
         height: 35vh;
@@ -290,20 +277,23 @@ li:hover,#theme:hover,#othernews:hover,#copyIp:hover{
         font-size: 1.5vh;
         margin-bottom: 2vh;
     }
-    .newsboard{
+    .socioboard{
         width: 96vw;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         gap: 1vh;
     }
-    .news{
-        height: 50vh;
+    .socio{
+        height: 20vh;
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         padding: 1vh;
+        position: relative;
+        top: 0;
+        transition: all .25s;
     }
     .laster{
         background-image: url("https://i.ytimg.com/vi/6Vq_SCBRbZo/maxresdefault.jpg");
@@ -332,22 +322,6 @@ li:hover,#theme:hover,#othernews:hover,#copyIp:hover{
         font-size: 2rem;
     }
     .infobox > p{
-        font-size: 1rem;
-    }
-    #newsboardbutton{
-        width: 100%;
-        height: 10vh;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        /* padding: 0 5vh; */
-        
-    }
-    #othernews{
-        background-color: white;
-        width: 50%;
-        height: 50%;
-        border-radius: 500px;
         font-size: 1rem;
     }
     footer{
