@@ -8,10 +8,10 @@ a{
     text-decoration: none;
 }
 body{
-    background: url("https://i.pinimg.com/736x/89/38/cb/8938cb8a9b67d871af843a10c79c4c8b.jpg");
     background-size: cover;
-    
+    background: url("./files/BackgroundLight.jpg");
     overflow-x:hidden;
+    transition: all .25s;
 }
 button{
     border: none;
@@ -64,7 +64,6 @@ li{
     transition: background-color .5s;
     font-weight: 400;
     color: black;
-    
 }
 li > span{
     margin-left: 1vh;
@@ -74,7 +73,6 @@ li > span{
     height: 6vh;
     background: none;
     border: none;
-    color: black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
